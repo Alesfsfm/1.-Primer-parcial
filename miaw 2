@@ -1,0 +1,34 @@
+
+while True:
+     try:
+            opcion = input("\n elija una opcion: \n")
+            print("1- suma:\n")
+            print("2- resta\n")
+            print("3- multiplicacion\n")
+            print("4- division\n")
+
+            while True:
+                try:
+                    opcion == 1 or opcion ==2 or opcion == 3 or opcion ==4
+                    break
+                except ValueError:
+                    print("debe elegir un numero entre 1 y 4\n")
+            if opcion == 1:
+             while True:
+                try:
+                    numero_1 = float(input("ingrese un numero\n"))
+                    break
+                except ValueError:
+                    print("debe ingresar un numero valido\n")
+            while True:
+                try:
+                    numero_2 = float(input("ingrese otro numero\n"))
+                    break
+                except ValueError:
+                    print("debe ingresar un numero valido\n")
+            resultado = numero_2 + numero_1
+    print("el resultado de la suma fue:", resultado)
+    
+          
+
+            
